@@ -15,7 +15,6 @@ public class ImageService {
     private ImageUploadedTopicService imageUploadedTopicService;
 
     private void uploadImage(ImageUploadRequest request) {
-
         Topic topic = new ImageUploadedTopic();
         this.imageUploadedTopicService.sendImageUploadedTopic(topic);
     }
