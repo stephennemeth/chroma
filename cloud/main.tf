@@ -20,3 +20,11 @@ resource "aws_s3_bucket" "chroma-raw-image-uploads" {
   }
 }
 
+resource "aws_s3_bucket" "chroma-processed-image-uploads" {
+  bucket = "chroma-processed-image-uploads"
+  tags = {
+    Name        = "Chroma Processed Uploads"
+    Environment = "Production"
+  }
+}
+
