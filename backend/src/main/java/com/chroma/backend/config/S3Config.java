@@ -18,7 +18,7 @@ public class S3Config {
     private String secretKey;
     @Value("${aws.region}")
     private String region;
-    @Value("${aws.buckenName}")
+    @Value("${aws.bucketName}")
     private String bucketName;
 
     @Bean("awsS3Client")

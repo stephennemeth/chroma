@@ -1,5 +1,6 @@
 package com.chroma.backend.controllers;
 
+import com.chroma.backend.entities.request.GetImageRequest;
 import com.chroma.backend.entities.request.ImageUploadRequest;
 import com.chroma.backend.entities.response.ImageUploadResponse;
 import com.chroma.backend.entities.response.Response;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,5 +25,10 @@ public class ImageController {
     @PostMapping("/upload")
     public ResponseEntity<Response> uploadImage(@RequestBody ImageUploadRequest imageUploadRequest) {
         return ResponseEntity.ok(new ImageUploadResponse("Image was uploaded successfully"));
+    }
+
+    @GetMapping("/get")
+    public ResponseEntity<Response> getImage(@RequestBody GetImageRequest getImageRequest) {
+        return ResponseEntity.ok(new ImageUploadResponse("Image was retrieved successfully"));
     }
 }

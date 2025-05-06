@@ -1,0 +1,25 @@
+{
+    "family": "chroma-backend", 
+    "containerDefinitions": [
+        {
+            "name": "chroma-task", 
+            "image": "528757801517.dkr.ecr.us-east-1.amazonaws.com/chroma:latest", 
+            "portMappings": [
+                {
+                    "containerPort": 8080, 
+                    "hostPort": 8080, 
+                    "protocol": "tcp"
+                }
+            ], 
+            "essential": true, 
+            "command": [
+                "java -jar /app/chroma.jar --spring.profiles.active=prod --server.port=8080"
+            ]
+        }
+    ], 
+    "requiresCompatibilities": [
+        "FARGATE"
+    ], 
+    "cpu": "256", 
+    "memory": "512"
+}

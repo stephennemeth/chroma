@@ -1,0 +1,17 @@
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/BackendApplication.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/config/S3Config.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/controllers/AccountController.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/controllers/ExceptionController.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/controllers/ImageController.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/entities/request/CreateUserRequest.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/entities/request/GetImageRequest.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/entities/request/ImageUploadRequest.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/entities/response/CreateUserResponse.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/entities/response/ImageUploadResponse.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/entities/response/Response.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/kafka/producers/KafkaProducerConfiguration.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/kafka/topics/ImageUploadedTopic.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/kafka/topics/Topic.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/services/ImageService.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/services/ImageUploadedTopicService.java
+/Users/stephennemeth/Desktop/chroma/backend/src/main/java/com/chroma/backend/services/S3Service.java
