@@ -19,3 +19,5 @@ cloud/destroy.sh
 cloud/.terraform
 *.jar
 *.original
+*.class
+*.class

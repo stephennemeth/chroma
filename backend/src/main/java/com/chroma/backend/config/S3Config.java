@@ -9,7 +9,6 @@ import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 
-@Configuration("s3Config")
 public class S3Config {
 
     @Value("${aws.accessKeyId}")
@@ -21,7 +20,7 @@ public class S3Config {
     @Value("${aws.bucketName}")
     private String bucketName;
 
-    @Bean("awsS3Client")
+    
     public AmazonS3 amazonS3() {
         return AmazonS3ClientBuilder.standard()
                 .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials(accessKeyId, secretKey)))
